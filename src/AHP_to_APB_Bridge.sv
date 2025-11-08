@@ -12,8 +12,8 @@ module AHP_to_APB_Bridge #(
     parameter DATA_WIDTH = 32,
 	           ADDR_WIDTH = 32,
               TRAN_WIDTH = 3
-
-) (
+) 
+	(
 
     input   logic                       H_CLK        ,
     input   logic                       H_RESET_n    ,
@@ -327,3 +327,4 @@ always_ff @( posedge H_CLK or negedge H_RESET_n ) begin : Output_Logic
 end
     
 endmodule
+
